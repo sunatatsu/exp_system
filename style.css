@@ -1,0 +1,74 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+#experiment-area {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ★追加2: 録音中の赤い丸のスタイル */
+#recording-indicator {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%; /* 円にする */
+    margin: 0 auto 20px auto; /* 中央揃えにして下に余白 */
+    animation: pulse 1.5s infinite; /* 点滅アニメーション */
+    /* 最初は hidden クラスで非表示になっている */
+}
+
+/* ★追加3: 赤い丸の点滅アニメーション */
+@keyframes pulse {
+    0% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+
+#message-display {
+    font-size: 1.2em;
+    min-height: 60px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+#mic-button {
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    display: none; 
+}
+
+#mic-button:active {
+    background-color: #0056b3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset;
+}
+
+#mic-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#start-button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
