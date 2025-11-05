@@ -9,8 +9,8 @@ const recordingIndicator = document.getElementById('recording-indicator');
 
 // --- 2. 実験シナリオの定義 ---
 const audioFiles = {
-    line1: 'audio/line1.mp3',
-    line2_A1: 'audio/line2_instant.mp3',
+    line1: 'audio/001_恐れ入ります。.wav',
+    line2_A1: 'audio/002_四国めたん（ノーマル）_…お客様。そのよう….wav',
     line2_A2: 'audio/line2_constant.mp3',
     line2_A3: 'audio/line2_gradual.mp3'
 };
