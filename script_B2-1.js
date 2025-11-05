@@ -7,7 +7,7 @@ const recordingIndicator = document.getElementById('recording-indicator');
 
 // --- 2. 実験シナリオの定義 ---
 const audioFiles = {
-    line1: 'audio/001_恐れ入ります。その….wav', // ★★★ ご指定のファイルに変更 ★★★
+    line1: 'audio/001_恐れ入ります。.wav', // ★★★ ご指定のファイルに変更 ★★★
     line2_A1: 'audio/002_申し訳ございません….wav', // ★★★ ご指定のファイルに変更 ★★★
     line3: 'audio/syuuseikyuu.wav' // (セリフ3)
 };
@@ -145,4 +145,5 @@ function playAudio(src, callback) {
         messageDisplay.textContent = `エラー: 音声ファイル(${src})が読み込めません。`;
     };
     audio.play();
+
 }
