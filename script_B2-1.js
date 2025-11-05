@@ -94,10 +94,14 @@ function startExperiment() {
 
 // シナリオを1ステップ進める関数
 function runScenario() {
-    if (scenarioStep >= scenario.length) {
+    if (scenarioStep >= currentScenario.length) { // ★ 正しい変数名
         console.log('シナリオ終了');
         return;
-    }
+    
+
+    const step = currentScenario[scenarioStep];
+    // ...
+}
 
     const step = currentScenario[scenarioStep];
 
@@ -145,5 +149,5 @@ function playAudio(src, callback) {
         messageDisplay.textContent = `エラー: 音声ファイル(${src})が読み込めません。`;
     };
     audio.play();
-
 }
+
