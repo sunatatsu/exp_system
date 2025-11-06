@@ -94,9 +94,11 @@ function startExperiment() {
 
 // シナリオを1ステップ進める関数
 function runScenario() {
-    if (scenarioStep >= scenario.length) { // ★ エラー箇所
+    if (scenarioStep >= currentScenario.length) { // ★ 修正後
         console.log('シナリオ終了');
         return;
+    }
+
     }
 // ...
     const step = currentScenario[scenarioStep];
@@ -146,4 +148,5 @@ function playAudio(src, callback) {
     };
     audio.play();
 }
+
 
