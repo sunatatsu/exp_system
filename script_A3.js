@@ -18,19 +18,19 @@ const audioFiles = {
 const scenarios_exp1 = {
     'A1': [
         { type: 'agent', message: '（エージェントが話しています - セリフ1）', audio: audioFiles.line1 }, // セリフ1
-        { type: 'user', message: '「ユーザのセリフ1」をどうぞ' },
+        { type: 'user', message: '「融通が利かないな、お前じゃ話にならん！」をどうぞ' },
         { type: 'agent', message: '（エージェントが話しています - セリフ2）', audio: audioFiles.line2_A1 }, // ★変更後のファイル
         { type: 'end', message: '対話終了です。' }
     ],
     'A2': [
         { type: 'agent', message: '（エージェントが話しています - セリフ1）', audio: audioFiles.line1 },
-        { type: 'user', message: '「ユーザのセリフ1」をどうぞ' },
+        { type: 'user', message: '「融通が利かないな、お前じゃ話にならん！」をどうぞ' },
         { type: 'agent', message: '（エージェントが話しています - セリフ2）', audio: audioFiles.line2_A2 },
         { type: 'end', message: '対話終了です。' }
     ],
     'A3': [
         { type: 'agent', message: '（エージェントが話しています - セリフ1）', audio: audioFiles.line1 },
-        { type: 'user', message: '「ユーザのセリフ1」をどうぞ' },
+        { type: 'user', message: '「融通が利かないな、お前じゃ話にならん！」をどうぞ' },
         { type: 'agent', message: '（エージェントが話しています - セリフ2）', audio: audioFiles.line2_A3 },
         { type: 'end', message: '対話終了です。' }
     ]
@@ -156,4 +156,5 @@ function playAudio(src, callback) {
     };
     audio.play();
 }
+
 
