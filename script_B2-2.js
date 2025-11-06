@@ -7,7 +7,7 @@ const recordingIndicator = document.getElementById('recording-indicator');
 
 // --- 2. 実験シナリオの定義 ---
 const audioFiles = {
-    line1: 'audio/001_恐れ入ります。その….wav', // (セリフ1)
+    line1: 'audio/001_恐れ入ります。.wav', // (セリフ1)
     line2_A1: 'audio/002_申し訳ございません….wav', // (セリフ2)
     line3: 'audio/syuuseizyozyo.wav' // ★★★ ご指定のファイルに変更 ★★★
 };
@@ -150,3 +150,4 @@ function playAudio(src, callback) {
     audio.play();
 
 }
+
