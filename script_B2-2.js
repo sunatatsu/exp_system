@@ -94,11 +94,11 @@ function startExperiment() {
 
 // シナリオを1ステップ進める関数
 function runScenario() {
-    if (scenarioStep >= scenario.length) {
-        console.log('シナリオ終了');
-        return;
-    }
-
+    if (scenarioStep >= scenario.length) { // ★ エラー箇所
+        console.log('シナリオ終了');
+        return;
+    }
+// ...
     const step = currentScenario[scenarioStep];
 
     if (step.type === 'agent') {
@@ -146,3 +146,4 @@ function playAudio(src, callback) {
     };
     audio.play();
 }
+
